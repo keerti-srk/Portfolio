@@ -514,6 +514,7 @@ section.about {
   .hero-img{width:200px;margin-left:12px;}
 }
 /* ================= TECHNICAL SKILLS SECTION ================= */
+@media (max-width: 768px) {
 .skills-section {
   padding: 80px 5%;
   text-align: center;
@@ -646,6 +647,7 @@ section.about {
   margin-top: 10px;
   font-weight: 600;
   font-family: 'Times New Roman';
+}
 }
 
 /* Animations */
