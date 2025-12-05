@@ -1942,6 +1942,18 @@ textarea {
     padding: 20px 10px;
   }
 }
+/* EXTRA CURRICULAR – NCC IMAGE FIX */
+.extra-card img,
+.extracurricular-card img,
+.ncc-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* smooth edges */
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* SMALL MOBILE PHONES */
 @media (max-width: 480px) {
@@ -1961,17 +1973,6 @@ textarea {
   .skill-box {
     width: 100%;
   }
-  /* EXTRA CURRICULAR – NCC IMAGE FIX */
-.extra-card img,
-.extracurricular-card img,
-.ncc-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px; /* smooth edges */
-  display: block;
-  margin: 0 auto;
-}
 
 }
 
