@@ -98,63 +98,60 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
 
-  const achievementCards = document.querySelectorAll(".achievement-card");
+    // Intersection Observer Animation
+    const achievementCards = document.querySelectorAll(".achievement-card");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.2 });
-
-  achievementCards.forEach(card => observer.observe(card));
-});
-
-
-
-
-const filterButtons = document.querySelectorAll(".filter-btn");
-const card1 = document.querySelectorAll(".achievement-card");
-const container = document.querySelector(".achievements-container");
-
-filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-
-        // Remove & add active button style
-        filterButtons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        const category = btn.getAttribute("data-category");
-
-        // Remove centering first
-        container.classList.remove("filtered-center");
-
-        let visibleCount = 0;
-
-        card1.forEach(card => {
-            const matches = (category === "all" || card.getAttribute("data-category") === category);
-
-            if (matches) {
-                card.style.display = "block";
-                setTimeout(() => card.style.opacity = "1", 20);
-                visibleCount++;
-            } else {
-                card.style.opacity = "0";
-                setTimeout(() => card.style.display = "none", 200);
-            }
-        });
-
-        //  Center ONLY Academics & Sports
-        if ((category === "academics" || category === "sports") && visibleCount > 0) {
-            container.classList.add("filtered-center");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
         }
+      });
+    }, { threshold: 0.2 });
 
+    achievementCards.forEach(card => observer.observe(card));
+
+
+    // FILTER FUNCTION
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const card1 = document.querySelectorAll(".achievement-card");
+    const container = document.querySelector(".achievements-container");
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            filterButtons.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const category = btn.getAttribute("data-category");
+            container.classList.remove("filtered-center");
+
+            let visibleCount = 0;
+
+            card1.forEach(card => {
+                const matches = (category === "all" || card.getAttribute("data-category") === category);
+
+                if (matches) {
+                    card.style.display = "block";
+                    setTimeout(() => card.style.opacity = "1", 20);
+                    visibleCount++;
+                } else {
+                    card.style.opacity = "0";
+                    setTimeout(() => card.style.display = "none", 200);
+                }
+            });
+
+            if ((category === "academics" || category === "sports") && visibleCount > 0) {
+                container.classList.add("filtered-center");
+            }
+
+        });
     });
+
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
