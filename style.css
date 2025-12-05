@@ -1869,38 +1869,48 @@ textarea {
 }
 
 /* ================= MOBILE RESPONSIVE FIXES ================= */
-@media (max-width: 768px) {
+/* ========== MOBILE FIXES ========== */
+@media(max-width: 768px) {
 
-  /* NAVBAR FIX */
+  /* NAVBAR MOBILE FIX */
   header {
-    padding: 12px 15px;
+    padding: 12px 10px;
+    flex-wrap: wrap; /* Allows items to move to next line */
+  }
+
+  .logo {
+    margin-left: 0;
   }
 
   nav {
-    display: none; /* Hide desktop menu for now */
+    width: 100%;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  /* HERO SECTION FIX */
+  nav a {
+    margin: 0;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  /* HERO SECTION MOBILE FIX */
   .hero {
-    flex-direction: column;
+    flex-direction: column; /* stack image and text */
     text-align: center;
-    padding: 120px 20px 40px;
+    padding: 120px 8% 50px;
   }
 
   .hero-content {
-    order: 1;
-  }
-
-  .hero-img {
-    width: 180px;
-    margin: 0;
-    margin-bottom: 20px;
-    order: 0;
+    margin-bottom: 25px;
+    max-width: 100%;
   }
 
   .hero h1 {
-    font-size: 32px;
-    line-height: 1.2;
+    font-size: 28px;
   }
 
   .hero h2 {
@@ -1911,53 +1921,13 @@ textarea {
     font-size: 15px;
   }
 
-  /* ABOUT SECTION */
-  .container {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .about-text h2 {
-    font-size: 30px;
-  }
-
-  .about-text p {
-    font-size: 15px;
-    text-align: left;
-  }
-
-  /* SKILLS SECTION FIX */
-  .skills-section h2 {
-    font-size: 32px;
-  }
-
-  .row1, .row2 {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  }
-
-  .skill-box {
-    width: 100%;
-    height: auto;
-    padding: 20px 10px;
-  }
-}
-
-/* SMALL MOBILE PHONES */
-@media (max-width: 480px) {
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
   .hero-img {
-    width: 150px;
+    width: 160px !important;
+    margin: 10px auto 0 auto;
   }
 
-  .row1, .row2 {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row on small screens */
-  }
-
-  .skill-box {
-    width: 100%;
+  /* Shapes hide on mobile to avoid clutter */
+  .shape {
+    display: none;
   }
 }
