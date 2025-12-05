@@ -1941,8 +1941,7 @@ textarea {
     height: auto;
     padding: 20px 10px;
   }
-}
-/* EXTRA CURRICULAR – NCC IMAGE FIX */
+  /* EXTRA CURRICULAR – NCC IMAGE FIX */
 .extra-card img,
 .extracurricular-card img,
 .ncc-card img {
@@ -1952,6 +1951,8 @@ textarea {
   border-radius: 12px; /* smooth edges */
   display: block;
   margin: 0 auto;
+}
+
 }
 
 
