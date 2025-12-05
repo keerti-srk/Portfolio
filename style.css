@@ -1962,3 +1962,26 @@ textarea {
     width: 100%;
   }
 }
+
+/* CENTER NCC PHOTO ON MOBILE */
+@media (max-width: 768px) {
+
+  .ncc-photo,
+  .ncc-img,
+  .ach-img,
+  .achievement-img,
+  .ach-photo img,
+  .achievement-card img {
+    display: block;
+    margin: 0 auto !important; /* centers the image */
+    text-align: center;
+  }
+
+  /* Optional: reduce size for better fit */
+  .ncc-photo img,
+  .ach-photo img {
+    width: 90%;
+    max-width: 280px;
+  }
+}
+
