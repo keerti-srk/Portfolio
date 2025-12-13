@@ -1367,11 +1367,11 @@ section.about {
 
 /* RIGHT SIDE IMAGE */
 .extra-image-box {
-     width: 40%;
-    height: 80%;            /* Stretch container height to match left cards */
+    width: 40%;
+    height: 150%;            /* Stretch container height to match left cards */
     display: flex;
     justify-content: center;
-    margin-top: 28px;
+    margin-top: 20x;
 }
 
 .extra-image-box img {
