@@ -2004,26 +2004,24 @@ textarea {
   }
 
  /* ===== HERO BUTTON MOBILE FIX (FINAL) ===== */
+/* ===== HERO BUTTON MOBILE FIX (CORRECT) ===== */
 
-.btn {
+.hero-buttons {
   display: grid !important;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: 1fr 1fr;
   gap: 14px;
   justify-content: center;
 }
 
-/* ALL BUTTONS RESET */
-.btn > * {
+/* FIX BUTTON WIDTH */
+.hero-buttons .btn {
   width: auto !important;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
 }
 
 /* THIRD BUTTON CENTERED BELOW */
-.btn > *:nth-child(3) {
+.hero-buttons .btn:nth-child(3) {
   grid-column: 1 / -1;
-  justify-self: center;
 }
 
   /* ABOUT SECTION FIX */
