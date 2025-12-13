@@ -2005,10 +2005,6 @@ textarea {
 
  /* ===== HERO BUTTON MOBILE FIX (FINAL) ===== */
 /* ===== HERO BUTTON MOBILE FIX (CORRECT) ===== */
-.btn {
-  
-  gap: 2px;          /* ← THIS CREATES SPACE */
-}
 
 .hero-buttons {
   display: grid !important;
