@@ -2006,7 +2006,7 @@ textarea {
 .hero-buttons {
     display: grid !important;
     grid-template-columns: repeat(2, max-content);
-    gap: 14px;
+    gap: 12px;
     justify-content: center;
   }
 
