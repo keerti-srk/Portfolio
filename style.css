@@ -2054,9 +2054,6 @@ textarea {
     width: 150px;
     height: 110px;
   }
-
-/* MOBILE RESPONSIVE FIX */
-@media (max-width: 768px) {
     .extra-image-box {
         width: 90%;              /* Match card width */
         margin: 20px auto;       /* Center horizontally */
@@ -2076,7 +2073,7 @@ textarea {
         animation-delay: 0.5s;
         border-radius: 12px;     /* Optional: match card style */
     }
-}
+
 
 }
 
