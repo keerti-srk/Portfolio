@@ -2002,6 +2002,19 @@ textarea {
     width: 180px;
     margin: 0 auto 20px;
   }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;   /* stack buttons vertically */
+    align-items: center;
+    gap: 15px;                /* space between buttons */
+  }
+
+  .hero-buttons a,
+  .hero-buttons button {
+    width: 100%;              /* full width buttons */
+    max-width: 260px;         /* keep it neat */
+    text-align: center;
+  }
 
   /* ABOUT SECTION FIX */
   section.about {
