@@ -2043,26 +2043,39 @@ textarea {
   .about-text p { font-size: 15px; }
 
   /* SKILLS GRID FIX */
+   .skill-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;          /* slightly reduced for mobile */
+    padding: 15px;
+  }
+
+  .skill-box i {
+    font-size: 42px;
+    margin-bottom: 6px;     /* reduce gap */
+  }
+
+  .skill-box h3 {
+    margin-top: 6px;        /* FIX text pushed down */
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* Convert 4-column grid → 2 columns */
   .row1,
   .row2 {
-    grid-template-columns: repeat(2, 1fr); /* make 2 columns */
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
     justify-items: center;
   }
 
+  /* Prevent fixed width breaking alignment */
   .skill-box {
-    width: 150px;
-    height: 110px;
+    width: 100%;
+    max-width: 170px;
   }
-    .extra-image-box {
-        width: 90%;              /* Match card width */
-        margin: 20px auto;       /* Center horizontally */
-        height: auto;            /* Let image define height */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .extra-image-box img {
         width: 100%;             /* Fill the container */
         max-width: 100%;         /* Ensure it matches card width */
