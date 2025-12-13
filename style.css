@@ -2047,30 +2047,35 @@ body {
     margin: 0 auto 20px;
   }
 
-.hero-buttons {
+hero-buttons {
     display: grid !important;
-    grid-template-columns: repeat(2, max-content);
-    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;                 /* reduced gap */
     justify-content: center;
   }
 
-  /* BUTTON RESET */
   .hero-buttons .btn {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;                 /* smaller icon gap */
+    padding: 10px 14px;       /* reduce button size */
+    font-size: 13px;          /* smaller text */
+    white-space: nowrap;
     width: auto !important;
-    white-space: nowrap;   /* prevent text breaking */
     justify-self: center;
   }
 
-  /* THIRD BUTTON CENTERED BELOW */
+  /* Icon size inside button */
+  .hero-buttons .btn i,
+  .hero-buttons .btn svg {
+    font-size: 14px;
+  }
+
+  /* Third button centered */
   .hero-buttons .btn:nth-child(3) {
     grid-column: 1 / -1;
     justify-self: center;
   }
-
-
   /* ABOUT SECTION FIX */
   section.about {
     padding: 40px 5%;
