@@ -1872,49 +1872,6 @@ textarea {
 @media (max-width: 768px) {
 
 
-  /* Prevent horizontal scrolling globally */
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Force all sections to stay inside screen */
-  section, div {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Fix images causing overflow */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Remove unwanted right padding/margin */
-  .container,
-  .wrapper,
-  .skills-section,
-  .hero,
-  .about,
-  .ncc-section {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  /* Fix animated / positioned elements */
-  * {
-    box-sizing: border-box;
-    transform: none !important;
-  }
-}
-
   /* NAVBAR FIX */
   header {
     padding: 12px 15px;
@@ -2010,6 +1967,49 @@ textarea {
 
 /* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 768px) {
+  
+  /* Prevent horizontal scrolling globally */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Force all sections to stay inside screen */
+  section, div {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Fix images causing overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Remove unwanted right padding/margin */
+  .container,
+  .wrapper,
+  .skills-section,
+  .hero,
+  .about,
+  .ncc-section {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Fix animated / positioned elements */
+  * {
+    box-sizing: border-box;
+    transform: none !important;
+  }
+}
    header {
     padding: 12px 20px;
     justify-content: flex-start; /* push content to left */
