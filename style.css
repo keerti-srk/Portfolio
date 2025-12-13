@@ -1966,14 +1966,19 @@ textarea {
 
 /* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 768px) {
-
-  /* NAVBAR FIX */
-  nav {
-    display: none; /* hide desktop menu */
+   header {
+    padding: 12px 20px;
+    justify-content: flex-start; /* push content to left */
   }
 
-  header {
-    padding: 12px 20px;
+  .logo {
+    margin-left: 0;
+    margin-right: auto; /* forces logo fully left */
+    text-align: left;
+  }
+
+  nav {
+    display: none; /* hide desktop menu */
   }
 
   /* HERO SECTION FIX */
