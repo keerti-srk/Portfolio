@@ -2025,6 +2025,11 @@ textarea {
     padding: 10px 16px;
     font-size: 14px;
   }
+  .hero-buttons a,
+  .btn-group a {
+    flex: 1;
+    text-align: center;
+  }
 
   /* ABOUT SECTION FIX */
   section.about {
