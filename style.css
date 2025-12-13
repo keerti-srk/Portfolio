@@ -1867,6 +1867,15 @@ textarea {
 .footer-arrow:hover {
     transform: scale(1.10);
 }
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  position: relative;
+}
+
 
 /* ================= MOBILE RESPONSIVE FIXES ================= */
 @media (max-width: 768px) {
@@ -1968,45 +1977,36 @@ textarea {
 /* ================= MOBILE RESPONSIVE FIX ================= */
 @media (max-width: 768px) {
   
-  /* Prevent horizontal scrolling globally */
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden !important;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* Force all sections to stay inside screen */
-  section, div {
+  section,
+  div {
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  /* Fix images causing overflow */
+  /* Fix containers pushing content right */
+  .container,
+  .wrapper,
+  .skills-section,
+  .ncc-section,
+  .hero,
+  .about {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Fix images */
   img {
     max-width: 100%;
     height: auto;
     display: block;
   }
 
-  /* Remove unwanted right padding/margin */
-  .container,
-  .wrapper,
-  .skills-section,
-  .hero,
-  .about,
-  .ncc-section {
-    width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  /* Fix animated / positioned elements */
+  /* Kill transforms causing overflow */
   * {
-    box-sizing: border-box;
     transform: none !important;
   }
 }
