@@ -2002,18 +2002,28 @@ textarea {
     width: 180px;
     margin: 0 auto 20px;
   }
-  .hero-buttons {
+ 
+  /* HERO BUTTON ALIGNMENT FIX */
+  .hero-buttons,
+  .btn-group,
+  .buttons {
     display: flex;
-    flex-direction: column;   /* stack buttons vertically */
+    flex-direction: row;       /* horizontal alignment */
+    justify-content: center;   /* center on mobile */
     align-items: center;
-    gap: 15px;                /* space between buttons */
+    gap: 12px;                 /* spacing between buttons */
+    flex-wrap: wrap;           /* prevents overflow on small screens */
   }
 
   .hero-buttons a,
-  .hero-buttons button {
-    width: 100%;              /* full width buttons */
-    max-width: 260px;         /* keep it neat */
-    text-align: center;
+  .btn-group a,
+  .buttons a,
+  .hero-buttons button,
+  .btn-group button,
+  .buttons button {
+    width: auto;               /* prevent full-width buttons */
+    padding: 10px 16px;
+    font-size: 14px;
   }
 
   /* ABOUT SECTION FIX */
