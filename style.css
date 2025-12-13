@@ -2054,5 +2054,23 @@ textarea {
     width: 150px;
     height: 110px;
   }
+
+  .extra-image-box {
+        width: 90%;               /* Full width for small screens */
+        margin: 20px auto;        /* Center horizontally with margin */
+        height: auto;             /* Let image define height */
+        justify-content: center;
+        align-items: center;      /* Center image vertically */
+    }
+
+    .extra-image-box img {
+        width: 100%;              /* Image fills container */
+        max-width: 300px;         /* Optional max width */
+        margin-left: 0;           /* Remove fixed left margin */
+        margin-top: 20px;         /* Space from text */
+        opacity: 0;
+        animation: zoomInSoft 1.2s ease forwards;
+        animation-delay: 0.5s;
+    }
 }
 
