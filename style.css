@@ -1976,6 +1976,9 @@ textarea {
     margin-right: auto; /* forces logo fully left */
     text-align: left;
   }
+   .logo-circle {
+    margin-left: 0;
+  }
 
   nav {
     display: none; /* hide desktop menu */
