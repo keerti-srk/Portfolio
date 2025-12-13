@@ -2007,7 +2007,7 @@ textarea {
 /* ===== HERO BUTTON MOBILE FIX (CORRECT) ===== */
 .btn {
   
-  gap: 5px;          /* ← THIS CREATES SPACE */
+  gap: 2px;          /* ← THIS CREATES SPACE */
 }
 
 .hero-buttons {
