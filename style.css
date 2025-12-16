@@ -1897,8 +1897,8 @@ textarea {
   text-align: center;
 
   /* Push below navbar */
-   margin-top: 70px;   /* SAME as header height */
-  padding-top: 30px;  /* adjust if navbar height changes */
+   margin-top: 80px;   /* SAME as header height */
+  padding-top: 20px;  /* adjust if navbar height changes */
   min-height: auto;
 }
 
@@ -1924,7 +1924,7 @@ textarea {
     margin: 0;
     margin-bottom: 20px;
     order: 0;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .hero h1 {
