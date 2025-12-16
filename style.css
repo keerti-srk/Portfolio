@@ -2176,28 +2176,7 @@ textarea {
     z-index: 10;
     position: relative;
   }
-  /* Default input background */
-.contact-form input,
-.contact-form textarea {
-  background: linear-gradient(90deg, #0b1c30, #09203f, #0b1c30);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: all 0.5s ease;
-}
 
-/* While entering text (focus) */
-.contact-form input:focus,
-.contact-form textarea:focus {
-  background: linear-gradient(90deg, #09203f, #0b1c30, #09203f);
-  border-color: #00ffd5;
-  box-shadow: 0 0 15px #00ffd53f;
-}
-
-/* After text is entered (not empty) */
-.contact-form input:not(:placeholder-shown),
-.contact-form textarea:not(:placeholder-shown) {
-  background: linear-gradient(90deg, #0b1c30, #0d2547, #0b1c30);
-}
 
 
 }
