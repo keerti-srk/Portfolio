@@ -1887,7 +1887,7 @@ textarea {
     display: none; /* Hide desktop menu for now */
   }
     body {
-    padding-top: 90px; /* MUST match actual header height */
+    padding-top: 80px; /* MUST match actual header height */
   }
 
   /* HERO SECTION FIX */
