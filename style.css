@@ -1887,7 +1887,7 @@ textarea {
     display: none; /* Hide desktop menu for now */
   }
     body {
-    padding-top: 90px; /* MUST match actual header height */
+    padding-top: 100px; /* MUST match actual header height */
   }
 
   /* HERO SECTION FIX */
@@ -1901,7 +1901,7 @@ textarea {
   text-align: center;
 
   /* Push below navbar */
-   margin-top: 0;     /* SAME as header height */
+   margin-top: 0px;     /* SAME as header height */
   padding-top: 20px;  /* adjust if navbar height changes */
   min-height: auto;
 }
