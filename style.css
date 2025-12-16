@@ -1880,14 +1880,13 @@ textarea {
   width: 100%;
   height: 70px;   /* navbar height */
   z-index: 1000;
-  padding: 12px 20px;
 }
 
   nav {
     display: none; /* Hide desktop menu for now */
   }
     body {
-    padding-top: 80px; /* MUST match actual header height */
+    padding-top: 70px; /* MUST match actual header height */
   }
 
   /* HERO SECTION FIX */
