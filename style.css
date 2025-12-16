@@ -1884,16 +1884,19 @@ textarea {
 
   /* HERO SECTION FIX */
   .hero {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    flex-direction: column;
-    text-align: center;
-     margin-top: 0 !important;
-     padding-top: 70px !important; /* EXACT header height */
-     min-height: auto !important;
-  }
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  /* Push below navbar */
+  padding-top: 100px; /* adjust if navbar height changes */
+  min-height: auto;
+}
+
   section:first-of-type {
     margin-top: 0 !important;
   }
@@ -2042,12 +2045,7 @@ textarea {
   }
 
   /* HERO SECTION FIX */
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding-top: 100px;
-  }
+ 
 
   .hero-content {
     order: 2;
