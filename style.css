@@ -2176,6 +2176,39 @@ textarea {
     z-index: 10;
     position: relative;
   }
+/* ================= REMOVE WHITE INPUT BACKGROUND ================= */
+.contact-form input,
+.contact-form textarea {
+  background: linear-gradient(90deg, #0b1c30, #09203f, #0b1c30) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff !important;
+  transition: all 0.5s ease;
+}
+
+/* While typing (focus) */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: linear-gradient(90deg, #0b1c30, #09203f, #0b1c30) !important;
+  border-color: #00ffd5;
+  box-shadow: 0 0 15px #00ffd53f;
+}
+
+/* After text entered */
+.contact-form input:not(:placeholder-shown),
+.contact-form textarea:not(:placeholder-shown) {
+  background: linear-gradient(90deg, #0b1c30, #09203f, #0b1c30) !important;
+}
+
+/* ================= MOBILE AUTOFILL FIX (IMPORTANT) ================= */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0b1c30 inset !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
 
 
 
