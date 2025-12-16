@@ -1893,7 +1893,7 @@ textarea {
   text-align: center;
 
   /* Push below navbar */
-  padding-top: 50px; /* adjust if navbar height changes */
+  padding-top: 0px; /* adjust if navbar height changes */
   min-height: auto;
 }
 
