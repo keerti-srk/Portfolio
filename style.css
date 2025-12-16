@@ -2057,7 +2057,7 @@ textarea {
   .hero-img {
     order: 1;
     width: 180px;
-    margin: 0 auto 20px;
+    margin-top: 30px;
   }
 
 .hero-buttons {
