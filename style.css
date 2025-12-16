@@ -1898,9 +1898,13 @@ textarea {
   }
 
   body, html {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+  margin: 0;
+  padding: 0;
+  background: #061c2f;  /* hero bg */
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+  
   .hero::before,
 .hero::after,
 .hero canvas,
