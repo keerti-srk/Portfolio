@@ -1897,10 +1897,6 @@ textarea {
   min-height: auto;
 }
 
-  section:first-of-type {
-    margin-top: 0 !important;
-  }
-
   body, html {
     max-width: 100%;
     overflow-x: hidden;
