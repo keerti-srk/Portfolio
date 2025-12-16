@@ -2059,16 +2059,24 @@ body {
 
 .hero-buttons {
   display: grid !important;
-  grid-template-columns: repeat(2, max-content); gap: 10px; 
-  justify-content: center; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
 }
 /* BUTTON RESET */ 
 .hero-buttons .btn {
-  display: inline-flex;
-  align-items: center; gap: 5px;
-  width: auto !important; white-space: nowrap;
-  /* prevent text breaking */ 
-  justify-self: center; 
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 100%;
+  max-width: 260px;   /* safe mobile width */
+  padding: 14px 16px;
+
+  white-space: nowrap;
+  margin: 0 auto;
 } 
 /* THIRD BUTTON CENTERED BELOW */
 .hero-buttons .btn:nth-child(3) {
