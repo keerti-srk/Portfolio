@@ -1873,10 +1873,14 @@ textarea {
 
 
   /* NAVBAR FIX */
-  header {
-    padding: 12px 15px;
-    height: 70px;
-  }
+   header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;   /* navbar height */
+  z-index: 1000;
+}
 
   nav {
     display: none; /* Hide desktop menu for now */
@@ -1893,7 +1897,8 @@ textarea {
   text-align: center;
 
   /* Push below navbar */
-  padding-top: 80px; /* adjust if navbar height changes */
+   margin-top: 70px;   /* SAME as header height */
+  padding-top: 20px;  /* adjust if navbar height changes */
   min-height: auto;
 }
 
@@ -1919,6 +1924,7 @@ textarea {
     margin: 0;
     margin-bottom: 20px;
     order: 0;
+    margin-top: 10px;
   }
 
   .hero h1 {
