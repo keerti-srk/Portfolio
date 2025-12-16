@@ -2146,6 +2146,11 @@ textarea {
         animation-delay: 0.5s;
         border-radius: 12px;     /* Optional: match card style */
     }
+   input,
+  textarea {
+    pointer-events: auto !important;
+    touch-action: manipulation;
+  }
 
 
 }
