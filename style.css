@@ -1884,6 +1884,7 @@ body {
   /* NAVBAR FIX */
   header {
     padding: 12px 15px;
+    height: 70px;
   }
 
   nav {
@@ -1894,7 +1895,16 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 120px 20px 40px;
+     margin-top: 0 !important;
+     padding-top: 70px !important; /* EXACT header height */
+     min-height: auto !important;
+  }
+  section:first-of-type {
+    margin-top: 0 !important;
+  }
+
+  body, html {
+    overflow-x: hidden;
   }
 
   .hero-content {
@@ -2125,21 +2135,7 @@ body {
         animation-delay: 0.5s;
         border-radius: 12px;     /* Optional: match card style */
     }
-.hero {
-    margin-top: 0 !important;
-    padding-top: 90px !important;  /* reduced from 120–140 */
-  }
 
-  /* Ensure buttons are fully visible */
-  .hero-buttons {
-    margin-top: 20px !important;
-    padding-bottom: 10px;
-  }
-
-  /* Prevent body overflow causing cut */
-  body {
-    overflow-x: hidden;
-  }
 
 
 
