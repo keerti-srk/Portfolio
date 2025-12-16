@@ -1893,6 +1893,10 @@ body {
 
   /* HERO SECTION FIX */
   .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
     flex-direction: column;
     text-align: center;
      margin-top: 0 !important;
@@ -1904,8 +1908,17 @@ body {
   }
 
   body, html {
+    max-width: 100%;
     overflow-x: hidden;
   }
+  .hero::before,
+.hero::after,
+.hero canvas,
+.hero .bg-animation {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 
   .hero-content {
     order: 1;
