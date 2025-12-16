@@ -1898,7 +1898,7 @@ textarea {
 
   /* Push below navbar */
    margin-top: 70px;   /* SAME as header height */
-  padding-top: 20px;  /* adjust if navbar height changes */
+  padding-top: 30px;  /* adjust if navbar height changes */
   min-height: auto;
 }
 
