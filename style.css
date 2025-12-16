@@ -1987,4 +1987,166 @@ textarea {
   }
 
 }
+/* ================= MOBILE RESPONSIVE FIX ================= */
+@media (max-width: 768px) {
+  
+  section,
+  div {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Fix containers pushing content right */
+  .container,
+  .wrapper,
+  .skills-section,
+  .ncc-section,
+  .hero,
+  .about {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Fix images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Kill transforms causing overflow */
+  * {
+    transform: none !important;
+  }
+
+   header {
+    padding: 12px 20px;
+    justify-content: flex-start; /* push content to left */
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-right: auto; /* forces logo fully left */
+    text-align: left;
+  }
+   .logo-circle {
+    margin-left: 0;
+  }
+
+  nav {
+    display: none; /* hide desktop menu */
+  }
+
+  /* HERO SECTION FIX */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 140px;
+  }
+
+  .hero-content {
+    order: 2;
+    width: 100%;
+  }
+
+  .hero-img {
+    order: 1;
+    width: 180px;
+    margin: 0 auto 20px;
+  }
+
+.hero-buttons {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
+/* BUTTON RESET */ 
+.hero-buttons .btn {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 100%;
+  max-width: 260px;   /* safe mobile width */
+  padding: 14px 16px;
+
+  white-space: nowrap;
+  margin: 0 auto;
+} 
+/* THIRD BUTTON CENTERED BELOW */
+.hero-buttons .btn:nth-child(3) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+  /* ABOUT SECTION FIX */
+  section.about {
+    padding: 40px 5%;
+    min-height: auto;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-text h2 { font-size: 32px; }
+  .about-text h3 { font-size: 18px; }
+  .about-text p { font-size: 15px; }
+
+  /* SKILLS GRID FIX */
+   .skill-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;          /* slightly reduced for mobile */
+    padding: 15px;
+  }
+
+  .skill-box i {
+    font-size: 42px;
+    margin-bottom: 6px;     /* reduce gap */
+  }
+
+  .skill-box h3 {
+    margin-top: 6px;        /* FIX text pushed down */
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  /* Convert 4-column grid → 2 columns */
+  .row1,
+  .row2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    justify-items: center;
+  }
+
+  /* Prevent fixed width breaking alignment */
+  .skill-box {
+    width: 100%;
+    max-width: 170px;
+  }
+    .extra-image-box img {
+        width: 100%;             /* Fill the container */
+        max-width: 100%;         /* Ensure it matches card width */
+        margin-left: 0;          /* Remove fixed left margin */
+        margin-top: 20px;        /* Space from text */
+        opacity: 0;
+        animation: zoomInSoft 1.2s ease forwards;
+        animation-delay: 0.5s;
+        border-radius: 12px;     /* Optional: match card style */
+    }
+
+
+}
 
