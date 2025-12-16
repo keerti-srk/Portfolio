@@ -1898,11 +1898,9 @@ textarea {
   }
 
   body, html {
-  margin: 0;
-  padding: 0;
-  background: #061c2f;  /* hero bg */
+  /* hero bg */
   overflow-x: hidden;
-  overscroll-behavior: none;
+
 }
   
   .hero::before,
