@@ -2125,6 +2125,20 @@ body {
         animation-delay: 0.5s;
         border-radius: 12px;     /* Optional: match card style */
     }
+ body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    margin-top: 0 !important;
+    padding-top: 90px !important;   /* reduced from 140px */
+    padding-bottom: 30px;
+  }
+
+  .hero-buttons {
+    margin-top: 15px;
+  }
 
 
 }
