@@ -2032,7 +2032,7 @@ body {
   * {
     transform: none !important;
   }
-}
+
    header {
     padding: 12px 20px;
     justify-content: flex-start; /* push content to left */
@@ -2156,8 +2156,6 @@ body {
         animation-delay: 0.5s;
         border-radius: 12px;     /* Optional: match card style */
     }
-
-
 
 
 }
